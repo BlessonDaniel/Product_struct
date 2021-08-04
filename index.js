@@ -3,7 +3,7 @@ const app=express()
 let dotenv = require('dotenv').config();
 const product=require('./app/routes/product')
 var ValidationError=require('express-json-validator-middleware')
-let port=process.env.PORT
+let port=3000
 app.use(express.urlencoded({ extended: false }))
      
 app.use(express.json())
